@@ -26,7 +26,7 @@ const Skills: React.FC<SkillsProps> = ({}) => {
         <ul className="text-sm md:text-base flex flex-wrap w-full py-5 gap-2 md:gap-5">
           {MySkills.map((skill, index) => {
             return (
-              <li className={`px-5 py-2 ${skill.color? `bg-${skill.color}` : 'bg-gray-500/50'} rounded-md hover:translate-x-2 hover:-translate-y-2 transition-all`}>
+              <li key={JSON.stringify(skill)} className={`px-5 py-2 ${skill.color? `bg-${skill.color}` : 'bg-gray-500/50'} rounded-md hover:translate-x-2 hover:-translate-y-2 transition-all`}>
                 {skill.title}
               </li>
             )
