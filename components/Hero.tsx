@@ -5,6 +5,7 @@ interface HeroProps {
   
 }
 
+
 const Hero: React.FC<HeroProps> = ({}) => {
   return (
     <main className="w-screen h-screen relative">
