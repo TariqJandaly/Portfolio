@@ -9,28 +9,7 @@ const projects = [
     image: "/Portfolio.png",
     date: "Jun 18, 2024",
     link: "https://tariqjandaly.com"
-  },
-  {
-    title: "Portfolio",
-    description: "My personal portfolio with all my skills and projects in it!",
-    image: "/Portfolio.png",
-    date: "Jun 18, 2024",
-    link: "https://tariqjandaly.com"
-  },
-  {
-    title: "Portfolio",
-    description: "My personal portfolio with all my skills and projects in it!",
-    image: "/Portfolio.png",
-    date: "Jun 18, 2024",
-    link: "https://tariqjandaly.com"
-  },
-  {
-    title: "Portfolio",
-    description: "My personal portfolio with all my skills and projects in it!",
-    image: "/Portfolio.png",
-    date: "Jun 18, 2024",
-    link: "https://tariqjandaly.com"
-  },
+  }
 ]
 
 const Projects: React.FC<ProjectsProps> = ({}) => {
