@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { ViewTransitions } from "next-view-transitions";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -16,15 +15,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ViewTransitions>
-      <html lang="en">
-        <head>
-          <link rel="icon" href="https://fav.farm/🐱‍👤" />
-        </head>
-        <body className={inter.className}>
-          {children}
-        </body>
-      </html>
-    </ViewTransitions>
+    <html style={{ width: '100%', height: '0.5rem', overflow: 'visible' }} className="scroll-smooth" lang="en">
+      <head>
+        <link rel="icon" href="https://fav.farm/🐱‍👤" />
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
+      <body className={inter.className}>
+        {children}
+      </body>
+    </html>
   );
 }
