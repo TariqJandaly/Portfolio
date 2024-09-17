@@ -45,7 +45,10 @@ const MySkills: Skill[] = [
     },
     {
         title: "Terminal"
-    }
+    },
+{
+ title: "Linux"
+}
 ]
 
 export default MySkills
